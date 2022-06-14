@@ -1,0 +1,320 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: opx;
+
+}
+body {
+  padding: 0px 10px;
+  background-color: #FAFAFA;
+  font-family: orbitron;
+  text-align: center;
+}
+#sectionSearch{
+  background: #6ab6ff;
+  width: 56%;
+  border-radius: 20px;
+}
+#h3{
+  color: grey;
+  font-size:1.5em;
+  padding: 5px;
+  border-radius: 20px 20px 0px 0px;
+  background: pink;
+}
+#p_search{
+  margin:10px;
+  padding: 10px;
+}
+#miboton {
+  z-index: 1000;
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 2px 4px 4px rgb(100, 164, 228);
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  background-color: gold;
+
+}
+#mimenu {
+  z-index: 999;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  list-style: none;
+  text-align: center;
+  color: wheat;
+}
+#mimenu >li {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 10px auto;
+  font-size: 1.3em;
+  box-shadow: 2px 4px 4px rgb(100, 164, 228);
+
+}
+#mimenu >li>a {
+  position: relative;
+  top: 9px;
+}
+#panel_editor {
+  text-align: center;
+}
+#nomNota {
+  color: white;
+  background-color: #232323;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin-left: 8px;
+  float: left;
+  width: 50%;
+  font-family: orbitron;
+}
+#txtarea {
+  color: white;
+  background-color: #202020;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 10px;
+  padding: 10px;
+  width: 90%;
+  height: 80vh;
+}
+#panel_inicio {
+  width: 100%;
+  padding: 5px 0px;
+  column-count: 2;
+  /* Espacio entre columnas */
+  column-gap: 10px;
+
+}
+
+.note {
+  /*background-color:#1E88E5;*/
+  border-radius: 10px;
+  margin: 0 0 10px 0;
+  text-align: left;
+  max-width: 100%;
+  overflow: auto;
+  box-shadow: inset -2px -2px 3px rgb(43, 45, 46);
+
+  /*Evitamos que se corte al cambiar de columna*/
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.note>h3 {
+  width: 70%;
+  float: left;
+  padding: 10px;
+  font-family: orbitron;
+}
+.note>button {
+  background: transparent;
+  color: white;
+  border: none;
+  margin-top: 8px;
+  margin-right: 4px;
+  float: right;
+  font-size: 1.2em;
+  width: 15%;
+  border-radius: 50%;
+}
+
+.note>p {
+  padding: 10px;
+}
+.note>p>button {
+  margin: 5px;
+  position: relative;
+  text-align: center;
+  float: right;
+  border: 1px solid gold;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: wheat;
+}
+.note>p>button>i {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+#menuSettings{
+  list-style: none;
+  width: 100%;
+  margin-left: -30px;
+  animation-duration: 1s;
+  animation-name: slideout;
+}
+#menuSettings>li{
+  display: inline-block;
+  position: relative;
+  width:30px;
+  height: 30px;
+  margin: 0px 3px;
+  border-radius: 50%;
+}
+#menuSettings>li>a>i{
+  margin: 6px 6px;
+  color: white;
+}
+#ul-theme-note{
+  height: 35px;
+  width: 100%;
+  left:-3px;
+  padding: 10px 0 0 0;
+  top: 5px;
+  align-content: center;
+  position: relative;
+  background-color: #81C784;
+  border-radius: 20px;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+#ul-theme-note>li {
+  margin: auto 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+}
+#ul-theme-note>li>a {
+  padding: 0px;
+}
+#ul-fontColor-note{
+  height: 35px;
+  width: 100%;
+  left:-3px;
+  padding: 10px 0 0 0;
+  top: 5px;
+  align-content: center;
+  position: relative;
+  background-color: #B388FF;
+  border-radius: 20px;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+#ul-fontColor-note>li {
+  margin: auto 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+}
+#ul-fontColor-note>li>a {
+  margin: 0px;
+  padding: 0px;
+}
+
+#ul-theme {
+  top: 103px;
+  background-color: red;
+  border-radius: 20px;
+}
+#ul-theme>li {
+  margin: auto 7px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: tomato;
+}
+
+#ul-tools {
+  padding-left: 0px;
+  background-color: #FFC400;
+  border-radius: 25px;
+  position: absolute;
+  list-style: none;
+  width: 40%;
+  margin-left: 55%;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+#ul-tools>li {
+  margin: 0px 5px;
+  margin-top: 4px;
+  display: inline-block;
+  background-color: #FFC400;
+}
+#ul-tools>li>a {
+  background-color: #FFC400;
+  float: left;
+}
+#ul-tools>li>a>i {
+  padding-top: 4px;
+  width: 25px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #FF6D00;
+}
+#toastSuccess {
+  font-family: orbitron;
+}
+#inputSearch {
+  border: 0px;
+  background-color: peru;
+  color: white;
+}
+
+@keyframes slidein {
+  from {
+    margin-top:-50px;
+    opacity: 10%;
+  }
+
+  to {
+    margin-top: 0px;
+    opacity: 100%;
+  }
+}
+@keyframes slideout {
+  from {
+    width: 100%;
+    margin-left: 100px;
+  }
+
+  to {
+    width: 100%;
+    margin-left:-30px;
+  }
+}
+@keyframes closeMenu {
+  from {
+    margin-left: 0px;
+  }
+
+  to {
+    margin-left: 150px;
+  }
+}
+@keyframes closeSubmenu {
+  from {
+    margin-top: 0px;
+    opacity: 100%;
+  
+  }
+
+  to {
+    margin-top: -36px;
+    opacity: 0%;
+  }
+}
+@keyframes bajarNota {
+  from {
+    margin-top: 0px;
+    
+  }
+
+  to {
+    margin-top: 150px;
+    
+  }
+}
